@@ -13,15 +13,16 @@
 This project demonstrates a **fully automated CI/CD pipeline** that deploys a static website whenever code is pushed to GitHub. No manual intervention required!
 
 ### 🔄 How It Works
-┌─────────────┐ ┌─────────────┐ ┌─────────────┐ ┌─────────────┐
-│ GitHub │────▶│ Jenkins │────▶│ EC2 │────▶│ Nginx │
-│ Push Code │ │ Trigger │ │ Deploy │ │ Serve │
-└─────────────┘ └─────────────┘ └─────────────┘ └─────────────┘
-│ │ │ │
-▼ ▼ ▼ ▼
-Webhook Pipeline Copy Files Live! ✅
-(Auto) (Auto) (Auto) (Auto)
 
+```
+GitHub Push → Jenkins → EC2 → Nginx → Live Website
+    │           │        │       │
+    ▼           ▼        ▼       ▼
+ Webhook    Pipeline   Deploy   Serve
+ (Auto)      (Auto)    (Auto)   (Auto)
+
+Total deployment time: ~30 seconds
+```
 
 **Total deployment time:** ~30 seconds ⚡
 
