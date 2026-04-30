@@ -41,17 +41,6 @@ Total deployment time: ~30 seconds
 
 ---
 
-## 📸 Screenshots
-
-### Jenkins Pipeline Success
-![Pipeline Success](screenshots/pipeline-success.png)
-
-### Live Website
-![Live Website](screenshots/website-live.png)
-
-### Jenkins Dashboard
-![Jenkins Dashboard](screenshots/jenkins-dashboard.png)
-
 ---
 
 ## 🏗️ Architecture Diagram
