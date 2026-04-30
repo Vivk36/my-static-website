@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vivek Shrimali | DevOps Engineer</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <span class="badge">🚀 CI/CD Pipeline Demo</span>
+            <h1>Vivek Shrimali</h1>
+            <p class="subtitle">DevOps Engineer Intern</p>
+        </div>
+
+        <div class="content">
+            <div class="card">
+                <h2>📌 About This Project</h2>
+                <p>This website is deployed automatically using a <strong>Jenkins CI/CD Pipeline</strong>. Every time I push code to GitHub, Jenkins automatically deploys it to this server.</p>
+            </div>
+
+            <div class="card">
+                <h2>🛠️ Tech Stack Used</h2>
+                <div class="skills">
+                    <span class="skill">Jenkins</span>
+                    <span class="skill">GitHub Webhooks</span>
+                    <span class="skill">AWS EC2</span>
+                    <span class="skill">Nginx</span>
+                    <span class="skill">Ubuntu</span>
+                    <span class="skill">Git</span>
+                </div>
+            </div>
+
+            <div class="card">
+                <h2>⚙️ How It Works</h2>
+                <div class="pipeline">
+                    <div class="step">1. Git Push → GitHub</div>
+                    <div class="arrow">↓</div>
+                    <div class="step">2. Webhook → Jenkins</div>
+                    <div class="arrow">↓</div>
+                    <div class="step">3. Jenkins pulls code</div>
+                    <div class="arrow">↓</div>
+                    <div class="step">4. Deploy to Nginx</div>
+                    <div class="arrow">↓</div>
+                    <div class="step success">5. Website Live! ✅</div>
+                </div>
+            </div>
+
+            <div class="card">
+                <h2>📊 Deployment Stats</h2>
+                <ul>
+                    <li><strong>Last Deployed:</strong> <span id="deploy-time"></span></li>
+                    <li><strong>Deployment Time:</strong> ~30 seconds</li>
+                    <li><strong>Pipeline Status:</strong> <span class="success-text">✅ Passing</span></li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="footer">
+            <p>Made with ❤️ by Vivek Shrimali | <a href="https://github.com/your-username/my-static-website">View on GitHub</a></p>
+        </div>
+    </div>
+
+    <script>
+        // Display current deployment time
+        document.getElementById('deploy-time').innerText = new Date().toLocaleString();
+    </script>
+</body>
+</html>
