@@ -1,0 +1,31 @@
+# OS generated files
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+*.swp
+*.swo
+
+# IDE files
+.vscode/
+.idea/
+*.sublime-*
+
+# Logs
+*.log
+jenkins.log
+
+# Temporary files
+*.tmp
+*.temp
+*.cache
+
+# Backup files
+*.backup
+*-backup
+
+# Jenkins local config (if any)
+jenkins-config.json
