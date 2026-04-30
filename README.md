@@ -55,3 +55,41 @@ Total deployment time: ~30 seconds
 ---
 
 ## 🏗️ Architecture Diagram
+
+## Architecture Diagram
+
+```
+┌──────────────────────────────────────────┐
+│            DEVELOPER LAPTOP              │
+│         git push origin main             │
+└────────────────────┬─────────────────────┘
+                     │
+                     ▼
+┌──────────────────────────────────────────┐
+│              GITHUB REPO                 │
+│    Webhook: Push event → POST to Jenkins │
+└────────────────────┬─────────────────────┘
+                     │
+                     ▼
+┌──────────────────────────────────────────┐
+│           JENKINS (AWS EC2)              │
+│  ┌────────────────────────────────────┐  │
+│  │ 1. Checkout Code                   │  │
+│  │ 2. Validate HTML                   │  │
+│  │ 3. Deploy to /var/www/html/        │  │
+│  │ 4. Reload Nginx                    │  │
+│  │ 5. Verify HTTP 200                 │  │
+│  └────────────────────────────────────┘  │
+└────────────────────┬─────────────────────┘
+                     │
+                     ▼
+┌──────────────────────────────────────────┐
+│            NGINX WEB SERVER              │
+│    Serves: /var/www/html/index.html      │
+│         Port: 80 (HTTP)                  │
+└──────────────────────────────────────────┘
+```
+
+
+---
+
