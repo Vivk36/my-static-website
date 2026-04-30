@@ -39,11 +39,7 @@ Total deployment time: ~30 seconds
 | **Ubuntu 22.04** | Operating system |
 | **Git** | Version control |
 
----
-
 ## 🏗️ Architecture Diagram
-
-## Architecture Diagram
 
 ```
 ┌──────────────────────────────────────────┐
