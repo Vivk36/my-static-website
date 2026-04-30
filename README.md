@@ -41,8 +41,6 @@ Total deployment time: ~30 seconds
 
 ---
 
----
-
 ## 🏗️ Architecture Diagram
 
 ## Architecture Diagram
